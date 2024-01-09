@@ -17,7 +17,6 @@ public class Shoot : MonoBehaviour
                 if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
                 {
                     Instantiate(bullet, shootPoint.position, shootPoint.rotation).GetComponent<Rigidbody>().AddForce(shootPoint.forward * shootForce);
-                    Debug.Log("Se ha disparado");
                 }
             }
         }
