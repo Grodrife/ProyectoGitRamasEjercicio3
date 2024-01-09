@@ -14,6 +14,7 @@ public class Letra : MonoBehaviour
         if (LetraManager.lm.alt)
         {
             LetraManager.lm.AnyadirLetra(alt);
+            Debug.Log("Hola mundo");
         } else if (LetraManager.lm.esMayuscula)
         {
             LetraManager.lm.AnyadirLetra(upper);
